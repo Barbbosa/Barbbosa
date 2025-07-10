@@ -1,4 +1,6 @@
-## Print(Olá mundo!)
+## Fernanda Barbosa
+
+Me chamo Fernanda, 
 - 👩🏽‍💻 Estagiária
 - 🌱 Estudando Engenharia de Software
 - 📫 Contate-me pelo e-mail: barbosasoftware220@outlook.com
