@@ -8,6 +8,6 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Barbbosa&layout=compact&theme=radical&hide=javascript,typescript,c,cpp,java,php,shell,go,ruby" height="180" style="display: inline-block;" alt="Barbbosa's Top Languages" />
 </p>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Barbbosa/snake-output/output/github-contribution-grid-snake-dark.svg" />
-  <img alt="snake animation" src="https://raw.githubusercontent.com/Barbbosa/snake-output/output/github-contribution-grid-snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Barbbosa/Barbbosa/output/github-contribution-grid-snake-dark.svg" />
+  <img alt="snake animation" src="https://raw.githubusercontent.com/Barbbosa/Barbbosa/output/github-contribution-grid-snake.svg" />
 </picture>
