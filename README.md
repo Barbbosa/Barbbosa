@@ -1,6 +1,6 @@
 ## Fernanda Barbosa
 
-- 🌱 Estudando Engenharia de Software
+- 🌱 Estudante Engenharia de Software
 - 📫 Contate-me pelo e-mail: barbosasoftware220@outlook.com
 
 <p align="center">
