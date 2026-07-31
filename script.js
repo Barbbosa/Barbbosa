@@ -100,6 +100,12 @@ ajustarTamanhoCanvas();
 criarParticulas();
 animar();
 
+/* ============================================
+   EFEITO DE DIGITAÇÃO: CÓDIGO NO MONITOR
+   Escreve o objeto "fernanda" caractere a
+   caractere no elemento #typing, em loop.
+============================================ */
+
 const code = `const fernanda = {
     nome: "Fernanda",
     faculdade: "Engenharia de Software",
@@ -123,30 +129,18 @@ const typing = document.getElementById("typing");
 
 let i = 0;
 
-function escrever(){
-
-    if(i < code.length){
-
-        typing.textContent += code.charAt(i);
-
-        i++;
-
-        setTimeout(escrever,40);
-
-    }else{
-
-        setTimeout(()=>{
-
-            typing.textContent="";
-
-            i=0;
-
-            escrever();
-
-        },2500);
-
-    }
-
+function escrever() {
+  if (i < code.length) {
+    typing.textContent += code.charAt(i);
+    i++;
+    setTimeout(escrever, 40);
+  } else {
+    setTimeout(() => {
+      typing.textContent = "";
+      i = 0;
+      escrever();
+    }, 2500);
+  }
 }
 
 escrever();
