@@ -1,0 +1,277 @@
+/* ===== IMPORTANDO FONTES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Jim+Nightshade&family=Press+Start+2P&display=swap');
+
+/* ===== MEDIA QUERIES (responsividade) — desativado por enquanto ===== */
+/* @media screen and (max-width: 600px) {
+  .logo,
+  h1 {
+    text-align: center;
+  }
+  .menu{
+    display: none;
+  }
+
+  }
+  .hardimg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .projetosgeral{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width:601px) and max{
+  .dropcontent{
+    display: none;
+  }
+  .dropdown{
+    display: none;
+}
+} */
+
+/* ===== RESET / BASE ===== */
+* {
+  box-sizing: border-box;
+  font-family: "Source Serif 4", serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth; /* rolagem suave ao clicar nos links do menu */
+}
+
+body {
+  background: #200000;
+  margin: 0%;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  /*color: rgb(253, 252, 252);*/
+  background-color: #75060631;
+  display: flex;
+  align-items: center;
+  position: sticky;   /* menu fica fixo no topo ao rolar a página */
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(6px); /* leve desfoque atrás do menu, já que ele é semi-transparente */
+}
+
+/* compensa a altura do menu fixo, pra seção não ficar escondida atrás dele ao clicar num link */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* ===== FUNDO ANIMADO (PARTÍCULAS) ===== */
+#bg-particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;          /* fica atrás de todo o conteúdo */
+  pointer-events: none;  /* não interfere em cliques/scroll */
+}
+/*h1{
+  color: #f5f3f3;
+}*/
+
+/* ===== LOGO ===== */
+.logo {
+  flex: 20%;
+  text-align: left;
+  color: #f8f3f3;
+  margin-left: 5%;
+}
+
+.logo a {
+  color: #f8f3f3;
+  font-family: "Almendra", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.logo a:hover {
+  font-size: 33px;
+  color: #fdfafa;
+  border-radius: 35px;
+  background-color: rgba(255, 47, 47, 0.438);
+  box-shadow: 2px 2px 30px rgb(255, 47, 47);
+}
+
+/* ===== MENU ===== */
+.menu {
+  display: flex;
+  flex-wrap: nowrap;          /* impede quebra de linha */
+  align-items: center;
+  justify-content: flex-end;  /* ou space-between, como preferir */
+}
+
+.menu a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-align: right;
+  font-family: "Almendra", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  padding: 12px 20px;
+  margin-left: 3%;
+  margin-right: 3%;
+  white-space: nowrap;        /* impede que o texto do link quebre */
+}
+
+.menu a:hover {
+  font-size: 17px;
+  border-top: 3px solid rgb(255, 152, 152);
+}
+
+/* ===== BOTÃO (item destacado do menu) ===== */
+#botão {
+  color: rgb(255, 254, 254);
+  background: rgb(156, 5, 5);
+  border-radius: 20px;
+  padding: 8px 20px;
+  margin-right: 10px;
+}
+
+#botão:hover {
+  color: #270101;
+  background: rgb(243, 240, 240);
+  border: none;
+}
+
+/* ===== CORPO DA PÁGINA (HOME / HEADER) ===== */
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+  margin-left: 5%;
+  margin-right: 5%;
+  flex: 40%;
+}
+
+.img-headline {
+  margin-right: 10%;
+  flex: 40%;
+  text-align: center;
+}
+
+.headline h2 {
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  color: rgb(255, 255, 255);
+}
+
+.redes {
+  display: flex;
+  margin-left: 15px;
+}
+
+.redes img {
+  display: block;
+  max-width: 30px;
+}
+
+.redes:hover {
+  border-radius: 3px;
+  box-shadow: 0px 2px 30px rgb(189, 11, 11);
+}
+
+/* ===== PÁGINA SOBRE ===== */
+.about {
+  display: flex;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 80px;
+  text-align: justify;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+
+.vida-pessoal,
+.vida-profissional {
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(142, 133, 133, 0.63);
+  border-radius: 20px;
+}
+
+.eu {
+  max-width: 150px;
+  float: left;
+  border-radius: 10px;
+}
+
+.vida-pessoal:hover,
+.vida-profissional:hover {
+  box-shadow: 0px 0px 30px rgba(37, 27, 27, 0.63);
+  border-radius: 20px;
+}
+
+/* ===== HARDSKILLS ===== */
+.hardimg {
+  display: flex;
+  gap: 8%;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+/* ===== PROJETOS ===== */
+.projetosgeral {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 50px;
+}
+
+.projectsp1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+}
+
+.projectsp2 {
+  text-align: center;
+  font-size: 20px;
+  margin: 0;
+}
+
+.projeto1 {
+  margin-top: 20px;
+  max-width: 300px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 1px 3px 15px rgb(116, 32, 32);
+}
+
+.projeto1:hover {
+  box-shadow: 1px 6px 20px rgb(207, 31, 31);
+}
+
+.imgprj1 {
+  max-width: 300px;
+  border-radius: 8px;
+}

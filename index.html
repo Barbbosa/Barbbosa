@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bem-vindos a minha pagina pessoal!">
+    <meta name="author" content="Fernanda B Ramos">
+    <!--<meta name="keywords" content="Fernanda,"-->
+    <link rel="stylesheet" href="style.css">
+    <title>Fernanda Barbosa</title>
+</head>
+<body>
+
+    <!-- canvas do efeito de fundo (partículas animadas) -->
+    <canvas id="bg-particles"></canvas>
+
+    <!-- barra de navegação -->
+    <nav class="navbar">
+        <div class="logo">
+            <h1><a href="#home">Fernanda Barbosa</a></h1>
+        </div>
+        <div class="menu">
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="curriculo/Fernanda_B_Ramos.pdf" target="_blank">Curriculo</a>
+            <a id="botão" href="#contato">Contato</a>
+        </div>
+    </nav>
+
+    <!-- ===== SEÇÃO: HOME ===== -->
+    <section id="home">
+        <header class="header">
+            <div class="headline">
+                <h2>Olá devs!</h2>
+                <h2 style="font-size: 40px;">Bem vindos ao meu site!</h2>
+                <p>Aqui você encontrará um pouco sobre mim, meus projetos, habilidades e experiências. Fique à vontade para explorar e conhecer meu trabalho!</p>
+            </div>
+
+            <div class="img-headline">
+                <img style="max-width: 90%;" src="img.img/web-development.png" alt="Ilustração de desenvolvimento web">
+            </div>
+
+            <!-- redes sociais -->
+            <div class="redes">
+                <a href="https://github.com/Barbbosa">
+                    <img src="logos.img/github (2).png" alt="Ícone do GitHub">
+                </a>
+            </div>
+            <div class="redes">
+                <a class="linkedin" href="https://www.linkedin.com/in/fernandabramos/">
+                    <img src="img.img/linkedin.png" alt="Ícone do LinkedIn">
+                </a>
+            </div>
+        </header>
+    </section>
+
+    <!-- ===== SEÇÃO: SOBRE ===== -->
+    <section id="sobre">
+        <h2 style="font-size: 25px; text-align: center; color: rgb(253, 253, 253); text-shadow: 2px 3px 20px rgb(162, 62, 62);">Um pouco sobre mim</h2>
+        <br><br>
+
+        <Header>
+            <div class="about">
+                <div class="vida-pessoal">
+                    <h3>Vida pessoal</h3>
+                    <img class="eu" src="img.img/minha_foto.png">
+                    <p class="aboutp">Tenho 21 anos e sou de Brasília-DF. Sempre fui curiosa e gosto de aprender coisas novas, seja algo diferente do meu dia a dia ou um assunto totalmente inusitado. Adoro explorar ideias, conhecer pessoas e descobrir jeitos diferentes de fazer as coisas. Acho que a vida fica mais interessante quando estamos abertos a novas experiências.</p>
+                </div>
+                <div class="vida-profissional" style="max-width: 480px;">
+                    <h3>Vida Profissional</h3>
+                    <p class="aboutp">Durante o ensino médio, descobri que gostaria de seguir na área de tecnologia, algo que sempre me impressionou. Por isso, decidi cursar Engenharia de Software. Além disso, fiz um curso de inglês, já que sempre apreciei o idioma e reconheço sua importância. Atualmente, sou estudante de Engenharia de Software na UDF e faço cursos fora da faculdade para me aperfeiçoar, buscando sempre ampliar meus conhecimentos e habilidades.</p>
+                </div>
+            </div>
+        </Header>
+        <br><br>
+
+        <!-- hardskills -->
+        <div class="hardskills">
+            <div class="hardtitulo" style="font-size: 20px; text-shadow: 0px 3px 20px rgb(255, 67, 67);">
+                <h3>Hard skills</h3>
+            </div>
+            <div class="hardimg">
+                <img style="max-width: 80px;" src="logos.img/html.png">
+                <img style="max-width: 80px;" src="logos.img/css.png">
+                <img style="max-width: 80px;" src="logos.img/js.png">
+                <img style="max-width: 80px;" src="logos.img/bd.png">
+                <img style="max-width: 80px;" src="logos.img/qlik.png">
+                <img style="max-width: 80px;" src="logos.img/github (2).png">
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SEÇÃO: PROJETOS ===== -->
+    <section id="projetos">
+        <div class="projects">
+            <p class="projectsp1">Meus projetos</p>
+            <br>
+            <p class="projectsp2">Os projetos a seguir estão sendo apresentados por grau de aprendizado.</p>
+        </div>
+
+        <div class="projetosgeral">
+            <div class="projeto1">
+                <p style="border: 1px solid red; margin-left: 30px; margin-right: 30px; border-radius: 10px;">Portfolio pessoal</p>
+                <img class="imgprj1" src="img.img/img_portfolio.png">
+                <p style="text-align: justify; padding: 5px; font-size: 10px;">Este é o meu portfólio pessoal, desenvolvido como parte do meu aprendizado em HTML e CSS. Aqui, compartilho informações sobre minha trajetória profissional e apresento minhas habilidades em desenvolvimento front-end e back-end, permitindo que você conheça melhor meu trabalho e minha dedicação à área de tecnologia. Este site será atualizado regularmente, incluindo novos conhecimentos em outras linguagens, frameworks e bancos de dados, conforme necessário.</p>
+            </div>
+            <div class="projeto1">
+                <p style="border: 1px solid red; margin-left: 30px; margin-right: 30px; border-radius: 10px;">Portfolio pessoal</p>
+                <img class="imgprj1" src="img.img/img_portfolio.png">
+                <p style="text-align: justify; padding: 5px; font-size: 10px;">Este é o meu portfólio pessoal, desenvolvido como parte do meu aprendizado em HTML e CSS. Aqui, compartilho informações sobre minha trajetória profissional e apresento minhas habilidades em desenvolvimento front-end e back-end, permitindo que você conheça melhor meu trabalho e minha dedicação à área de tecnologia. Este site será atualizado regularmente, incluindo novos conhecimentos em outras linguagens, frameworks e bancos de dados, conforme necessário.</p>
+            </div>
+            <div class="projeto1">
+                <p style="border: 1px solid red; margin-left: 30px; margin-right: 30px; border-radius: 30px;">Portfolio pessoal</p>
+                <img class="imgprj1" src="img.img/img_portfolio.png">
+                <p style="text-align: justify; padding: 5px; font-size: 10px;">Este é o meu portfólio pessoal, desenvolvido como parte do meu aprendizado em HTML e CSS. Aqui, compartilho informações sobre minha trajetória profissional e apresento minhas habilidades em desenvolvimento front-end e back-end, permitindo que você conheça melhor meu trabalho e minha dedicação à área de tecnologia. Este site será atualizado regularmente, incluindo novos conhecimentos em outras linguagens, frameworks e bancos de dados, conforme necessário.</p>
+            </div>
+        </div>
+        <br><br>
+    </section>
+
+    <!-- ===== SEÇÃO: CONTATO ===== -->
+    <section id="contato">
+        <!-- TODO: conteúdo da página de contato ainda não foi adicionado -->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
