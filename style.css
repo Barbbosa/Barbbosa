@@ -773,3 +773,71 @@ p{
         transform:translateY(0);
     }
 }
+
+/* ===================================================
+   RESPONSIVIDADE - NAVBAR
+   Adicione no FINAL do style.css
+=================================================== */
+
+@media screen and (max-width: 900px){
+
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .logo{
+        flex: none;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo h1{
+        margin: 0;
+    }
+
+    .logo a{
+        font-size: 32px;
+    }
+
+    .menu{
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .menu a{
+        margin: 0;
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+}
+
+/* Celulares */
+
+@media screen and (max-width: 600px){
+
+    .logo a{
+        font-size: 26px;
+    }
+
+    .menu{
+        gap: 5px;
+    }
+
+    .menu a{
+        font-size: 15px;
+        padding: 8px 10px;
+    }
+
+    #botão{
+        margin: 10px 0 0;
+    }
+
+}
