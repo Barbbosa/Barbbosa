@@ -99,3 +99,54 @@ window.addEventListener('resize', () => {
 ajustarTamanhoCanvas();
 criarParticulas();
 animar();
+
+const code = `const fernanda = {
+    nome: "Fernanda",
+    faculdade: "Engenharia de Software",
+    profissão: "Analista e desenvolvedora de banco de dados",
+    stack: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python",
+        "SQL",
+        "Qlik Sense"
+    ],
+    hobbies: [
+        "Games",
+        "Tecnologia",
+        "Aprender"
+    ] 
+}`;
+
+const typing = document.getElementById("typing");
+
+let i = 0;
+
+function escrever(){
+
+    if(i < code.length){
+
+        typing.textContent += code.charAt(i);
+
+        i++;
+
+        setTimeout(escrever,40);
+
+    }else{
+
+        setTimeout(()=>{
+
+            typing.textContent="";
+
+            i=0;
+
+            escrever();
+
+        },2500);
+
+    }
+
+}
+
+escrever();
