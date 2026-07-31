@@ -1,4 +1,29 @@
 /* ============================================
+   MENU MOBILE (HAMBÚRGUER)
+   Alterna a exibição do menu em telas pequenas
+   e fecha automaticamente ao clicar em um link.
+============================================ */
+
+const menuToggle = document.getElementById('menuToggle');
+const menu = document.getElementById('menu');
+
+if (menuToggle && menu) {
+  menuToggle.addEventListener('click', () => {
+    const aberto = menu.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded', aberto);
+  });
+
+  menu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      menu.classList.remove('active');
+      menuToggle.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded', false);
+    });
+  });
+}
+
+/* ============================================
    EFEITO DE FUNDO: PARTÍCULAS ANIMADAS
    Canvas fixo atrás do conteúdo da página,
    com pontos que se movem e se conectam
@@ -132,6 +157,7 @@ let i = 0;
 function escrever() {
   if (i < code.length) {
     typing.textContent += code.charAt(i);
+    typing.scrollTop = typing.scrollHeight;
     i++;
     setTimeout(escrever, 40);
   } else {

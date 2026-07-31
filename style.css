@@ -38,6 +38,31 @@ body{
 
 section{
     scroll-margin-top:80px;
+    padding:110px 0;
+}
+
+#home{
+    padding-top:0;
+}
+
+/* título pequeno acima do título principal de cada seção */
+.section-eyebrow{
+    text-align:center;
+    font-family:"Almendra",serif;
+    font-size:14px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#ff5c5c;
+    margin-bottom:10px;
+}
+
+/* título principal reutilizado nas seções Sobre e Contato */
+.section-title{
+    font-size:28px;
+    text-align:center;
+    color:#fdfdfd;
+    text-shadow:2px 3px 20px rgba(162,62,62,.9);
+    margin-bottom:60px;
 }
 
 /* ===================== FUNDO ===================== */
@@ -88,6 +113,7 @@ section{
     display:flex;
     align-items:center;
     gap:20px;
+    transition:max-height .35s ease, opacity .3s ease, margin-top .35s ease;
 }
 
 .menu a{
@@ -114,15 +140,40 @@ section{
     width:100%;
 }
 
-#botão{
-    background:#9c0505;
-    border-radius:20px;
+/* ===================== MENU MOBILE (HAMBÚRGUER) ===================== */
+
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    gap:5px;
+    width:32px;
+    height:26px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:0;
 }
 
-#botão:hover{
-    color:#270101;
+.menu-toggle span{
+    display:block;
+    width:100%;
+    height:3px;
+    border-radius:2px;
     background:#fff;
-    border:none;
+    transition:.3s;
+}
+
+.menu-toggle.active span:nth-child(1){
+    transform:translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2){
+    opacity:0;
+}
+
+.menu-toggle.active span:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg);
 }
 
 /* ===================== HOME ===================== */
@@ -141,11 +192,20 @@ section{
 
 .headline{
     flex:1;
-    animation:fadeUp .8s ease;
 }
 
 .headline h2{
     margin-bottom:15px;
+    opacity:0;
+    animation:fadeUp .8s ease forwards;
+}
+
+.headline h2:nth-of-type(1){
+    animation-delay:.15s;
+}
+
+.headline h2:nth-of-type(2){
+    animation-delay:.4s;
 }
 
 .titulo{
@@ -156,6 +216,8 @@ section{
     margin-top:25px;
     font-size:20px;
     line-height:1.7;
+    opacity:0;
+    animation:fadeUp .8s ease .65s forwards;
 }
 
 /* ===================== LADO DIREITO ===================== */
@@ -179,6 +241,9 @@ section{
 /* Monitor principal */
 
 .monitor{
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
     background:#0d0d0d;
     border:1px solid #811818;
     border-radius:12px;
@@ -216,6 +281,7 @@ section{
     align-items:center;
     gap:8px;
     height:30px;
+    flex-shrink:0;
     padding-left:12px;
     background:#252525;
 }
@@ -230,12 +296,21 @@ section{
 /* Código */
 
 #typing{
-    height:190px;
-    overflow-y:auto;
-    padding:15px;
+    flex:1;
+    width:calc(100% + 20px);
+    margin-right:-20px;
+    overflow-y:scroll;
+    padding:15px 35px 15px 15px;
     white-space:pre-wrap;
     color:#65ff96;
-    font:14px Consolas,monospace;
+    font-family:Consolas,monospace;
+    font-size:clamp(9px,2.4vw,14px);
+    scrollbar-width:none;
+    -ms-overflow-style:none;
+}
+
+#typing::-webkit-scrollbar{
+    display:none;
 }
 
 /* Dashboard */
@@ -244,7 +319,7 @@ section{
     display:flex;
     justify-content:space-evenly;
     align-items:flex-end;
-    height:100%;
+    flex:1;
     padding:15px;
 }
 
@@ -265,9 +340,7 @@ section{
     display:flex;
     justify-content:center;
     gap:35px;
-    margin-top:25px;
-    width:100vw;
-    margin-left:calc(50% - 50vw);
+    margin-top:40px;
 }
 
 .socials img{
@@ -362,18 +435,20 @@ section{
 /* ===================== PROJETOS ===================== */
 
 .projects{
-    margin:100px 0 60px;
+    margin:0 0 60px;
     text-align:center;
     animation:fadeUp 1.3s ease;
 }
 
 .projectsp1{
     font-size:42px;
+    margin-top:8px;
     margin-bottom:10px;
 }
 
 .projectsp2{
     font-size:20px;
+    margin-top:12px;
     opacity:.85;
 }
 
@@ -419,6 +494,65 @@ section{
     display:block;
 }
 
+/* ===================== CONTATO ===================== */
+
+.contato-content{
+    width:min(600px,90%);
+    margin:auto;
+    text-align:center;
+    animation:fadeUp 1s ease;
+}
+
+.contato-texto{
+    line-height:1.8;
+    opacity:.9;
+}
+
+.contato-links{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    margin-top:40px;
+}
+
+.contato-link{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding:16px 22px;
+    border:1px solid #811818;
+    border-radius:12px;
+    background:#0d0d0d;
+    box-shadow:0 0 15px rgba(255,0,0,.12);
+}
+
+.contato-link:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 25px rgba(255,47,47,.35);
+    border-color:#ff4040;
+}
+
+.contato-icone{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:24px;
+    font-size:18px;
+}
+
+.contato-icone img{
+    width:22px;
+}
+
+/* ===================== RODAPÉ ===================== */
+
+.site-footer{
+    padding:30px 5%;
+    text-align:center;
+    font-size:13px;
+    opacity:.6;
+}
+
 /* ===================== UTILITÁRIOS ===================== */
 
 h3{
@@ -434,6 +568,10 @@ p{
 /* ===================== RESPONSIVIDADE ===================== */
 
 @media (max-width:1000px){
+
+    section{
+        padding:80px 0;
+    }
 
     .header{
         flex-direction:column;
@@ -489,15 +627,38 @@ p{
 
 @media (max-width:650px){
 
+    section{
+        padding:60px 0;
+    }
+
     .navbar{
-        flex-direction:column;
-        gap:20px;
-        padding:20px;
+        flex-wrap:wrap;
+        padding:16px 5%;
+    }
+
+    .menu-toggle{
+        display:flex;
     }
 
     .menu{
-        flex-wrap:wrap;
-        justify-content:center;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+        width:100%;
+        max-height:0;
+        overflow:hidden;
+        opacity:0;
+    }
+
+    .menu.active{
+        max-height:300px;
+        opacity:1;
+        margin-top:18px;
+    }
+
+    .menu a{
+        text-align:center;
+        padding:14px 16px;
     }
 
     .headline h2{
@@ -525,10 +686,6 @@ p{
     .monitor-2{
         width:150px;
         height:110px;
-    }
-
-    #typing{
-        font-size:12px;
     }
 
     .socials img{
@@ -577,11 +734,6 @@ p{
     .monitor-2{
         width:120px;
         height:85px;
-    }
-
-    #typing{
-        font-size:11px;
-        height:110px;
     }
 
     .socials{

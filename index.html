@@ -19,12 +19,17 @@
         <div class="logo">
             <h1><a href="#home">Fernanda Barbosa</a></h1>
         </div>
-        <div class="menu">
+        <div class="menu" id="menu">
             <a href="#sobre">Sobre</a>
             <a href="#projetos">Projetos</a>
             <a href="curriculo/Fernanda_B_Ramos.pdf" target="_blank">Curriculo</a>
             <a id="botão" href="#contato">Contato</a>
         </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </nav>
 
     <!-- ===== SEÇÃO: HOME ===== -->
@@ -80,27 +85,27 @@
 
                 </div>
 
-                <div class="socials">
-
-                    <a href="https://github.com/Barbbosa" target="_blank">
-                        <img src="logos.img/github (2).png">
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/fernandabramos/" target="_blank">
-                        <img src="logos.img/linkedin.png">
-                    </a>
-
-                </div>
-
             </div>
 
         </header>
+
+        <div class="socials">
+
+            <a href="https://github.com/Barbbosa" target="_blank">
+                <img src="logos.img/github (2).png">
+            </a>
+
+            <a href="https://www.linkedin.com/in/fernandabramos/" target="_blank">
+                <img src="logos.img/linkedin.png">
+            </a>
+
+        </div>
     </section>
 
     <!-- ===== SEÇÃO: SOBRE ===== -->
     <section id="sobre">
-        <h2 style="font-size: 25px; text-align: center; color: rgb(253, 253, 253); text-shadow: 2px 3px 20px rgb(162, 62, 62);">Um pouco sobre mim</h2>
-        <br><br>
+        <p class="section-eyebrow">Sobre mim</p>
+        <h2 class="section-title">Um pouco sobre mim</h2>
 
         <header>
             <div class="about">
@@ -115,7 +120,6 @@
                 </div>
             </div>
         </header>
-        <br><br>
 
         <!-- hardskills -->
         <div class="hardskills">
@@ -136,8 +140,8 @@
     <!-- ===== SEÇÃO: PROJETOS ===== -->
     <section id="projetos">
         <div class="projects">
+            <p class="section-eyebrow">Portfólio</p>
             <p class="projectsp1">Meus projetos</p>
-            <br>
             <p class="projectsp2">Os projetos a seguir estão sendo apresentados por grau de aprendizado.</p>
         </div>
 
@@ -158,13 +162,50 @@
                 <p style="text-align: justify; padding: 5px; font-size: 10px;">Este é o meu portfólio pessoal, desenvolvido como parte do meu aprendizado em HTML e CSS. Aqui, compartilho informações sobre minha trajetória profissional e apresento minhas habilidades em desenvolvimento front-end e back-end, permitindo que você conheça melhor meu trabalho e minha dedicação à área de tecnologia. Este site será atualizado regularmente, incluindo novos conhecimentos em outras linguagens, frameworks e bancos de dados, conforme necessário.</p>
             </div>
         </div>
-        <br><br>
     </section>
 
     <!-- ===== SEÇÃO: CONTATO ===== -->
     <section id="contato">
-        <!-- TODO: conteúdo da página de contato ainda não foi adicionado -->
+        <p class="section-eyebrow">Contato</p>
+        <h2 class="section-title">Vamos conversar?</h2>
+
+        <div class="contato-content">
+            <p class="contato-texto">
+                <!--Estou sempre aberta a novas oportunidades, projetos e trocas de ideia
+                sobre tecnologia.--> Se quiser bater um papo, me chama em um dos canais abaixo.
+            </p>
+
+            <div class="contato-links">
+                <a class="contato-link" href="mailto:seuemail@exemplo.com">
+                    <span class="contato-icone">✉</span>
+                    <span>barbosasoftware220@outlook.com</span>
+                </a>
+
+                <a class="contato-link" href="https://github.com/Barbbosa" target="_blank">
+                    <span class="contato-icone">
+                        <img src="logos.img/github (2).png" alt="GitHub">
+                    </span>
+                    <span>github.com/Barbbosa</span>
+                </a>
+
+                <a class="contato-link" href="https://www.linkedin.com/in/fernandabramos/" target="_blank">
+                    <span class="contato-icone">
+                        <img src="logos.img/linkedin.png" alt="LinkedIn">
+                    </span>
+                    <span>linkedin.com/in/fernandabramos</span>
+                </a>
+
+                <a class="contato-link" href="curriculo/Fernanda_B_Ramos.pdf" target="_blank">
+                    <span class="contato-icone">📄</span>
+                    <span>Baixar currículo</span>
+                </a>
+            </div>
+        </div>
     </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Fernanda Barbosa.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
