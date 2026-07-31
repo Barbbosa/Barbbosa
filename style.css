@@ -841,3 +841,82 @@ p{
     }
 
 }
+
+/* ==========================================
+   RESPONSIVIDADE DOS MONITORES
+========================================== */
+
+@media screen and (max-width: 900px){
+
+    .hero-monitors{
+        width:380px;
+        height:300px;
+    }
+
+    .monitor-1{
+        width:280px;
+        height:200px;
+    }
+
+    .monitor-2{
+        width:170px;
+        height:120px;
+        right:20px;
+        bottom:0;
+    }
+
+    .dashboard{
+        padding:10px;
+    }
+
+    .bar{
+        width:16px;
+    }
+
+    .b1{height:30px;}
+    .b2{height:65px;}
+    .b3{height:45px;}
+    .b4{height:80px;}
+
+}
+
+/* Celulares */
+
+@media screen and (max-width: 600px){
+
+    .hero-right{
+        width:100%;
+    }
+
+    .hero-monitors{
+        width:300px;
+        height:250px;
+    }
+
+    .monitor-1{
+        width:220px;
+        height:170px;
+        right:0;
+    }
+
+    .monitor-2{
+        width:140px;
+        height:100px;
+        right:10px;
+        bottom:0;
+    }
+
+    .dashboard{
+        padding:8px;
+    }
+
+    .bar{
+        width:12px;
+    }
+
+    .b1{height:22px;}
+    .b2{height:48px;}
+    .b3{height:34px;}
+    .b4{height:60px;}
+
+}
