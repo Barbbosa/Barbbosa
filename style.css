@@ -194,7 +194,7 @@ section{
 .monitor-1{
     position:absolute;
     top:0;
-    right:0;
+    left:0;
     width:320px;
     height:220px;
 }
@@ -203,7 +203,7 @@ section{
 
 .monitor-2{
     position:absolute;
-    right:40px;
+    right:0;
     bottom:0;
     width:190px;
     height:135px;
@@ -266,6 +266,8 @@ section{
     justify-content:center;
     gap:35px;
     margin-top:25px;
+    width:100vw;
+    margin-left:calc(50% - 50vw);
 }
 
 .socials img{
@@ -437,6 +439,7 @@ p{
         flex-direction:column;
         text-align:center;
         gap:50px;
+        padding:60px 0;
     }
 
     .headline{
@@ -456,7 +459,6 @@ p{
     .monitor-2{
         width:170px;
         height:120px;
-        right:20px;
     }
 
     .about{
@@ -523,7 +525,6 @@ p{
     .monitor-2{
         width:150px;
         height:110px;
-        right:10px;
     }
 
     #typing{
@@ -544,6 +545,68 @@ p{
 
     .projectsp2{
         font-size:18px;
+    }
+
+}
+
+@media (max-width:400px){
+
+    .header{
+        padding:60px 0;
+        gap:35px;
+    }
+
+    .titulo{
+        font-size:30px;
+    }
+
+    .headline p{
+        font-size:16px;
+    }
+
+    .hero-monitors{
+        width:260px;
+        height:220px;
+    }
+
+    .monitor-1{
+        width:200px;
+        height:140px;
+    }
+
+    .monitor-2{
+        width:120px;
+        height:85px;
+    }
+
+    #typing{
+        font-size:11px;
+        height:110px;
+    }
+
+    .socials{
+        gap:25px;
+    }
+
+    .socials img{
+        width:30px;
+    }
+
+    .hardimg img{
+        width:55px;
+    }
+
+    .aboutp{
+        font-size:14px;
+    }
+
+    .eu{
+        width:120px;
+    }
+
+    .projeto1{
+        width:100%;
+        max-width:280px;
     }
 
 }
