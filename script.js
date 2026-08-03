@@ -134,7 +134,7 @@ animar();
 const code = `const fernanda = {
     nome: "Fernanda",
     faculdade: "Engenharia de Software",
-    profissão: "Analista e desenvolvedora de banco de dados",
+    profissao: "Analista e desenvolvedora de banco de dados",
     stack: [
         "HTML",
         "CSS",
