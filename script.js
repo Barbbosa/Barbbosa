@@ -170,3 +170,24 @@ function escrever() {
 }
 
 escrever();
+
+const hora = new Date().getHours();
+let saudacao;
+
+switch (true) {
+
+    case hora < 12:
+        saudacao = "☀️ Bom dia Dev!";
+        break;
+
+    case hora < 18:
+        saudacao = "🌤️ Boa tarde Dev!";
+        break;
+
+    default:
+        saudacao = "🌙 Boa noite Dev!";
+
+}
+
+document.getElementById("saudacao").textContent = saudacao;
+

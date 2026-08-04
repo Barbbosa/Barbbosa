@@ -375,13 +375,14 @@ section{
     flex:1;
     padding:20px;
     border-radius:20px;
-    box-shadow:0 0 30px rgba(142,133,133,.63);
+    
     transition:.3s;
 }
 
 .vida-pessoal:hover,
 .vida-profissional:hover{
     box-shadow:0 0 30px rgba(255,47,47,.35);
+    
 }
 
 .about h3{
@@ -493,6 +494,7 @@ section{
     width:100%;
     display:block;
 }
+
 
 /* ===================== CONTATO ===================== */
 
