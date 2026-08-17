@@ -27,9 +27,8 @@ Este projeto foi desenvolvido com o objetivo de apresentar minha trajetória, ha
 - Animação de digitação simulando código.
 - Layout responsivo para diferentes dispositivos.
 
-## 📷 Prévia
 
-![Preview do Portfólio](logos.img/portfolio.png)
+
 
 ## 📂 Estrutura do projeto
 
