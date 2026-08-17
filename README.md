@@ -7,7 +7,7 @@ Este projeto foi desenvolvido com o objetivo de apresentar minha trajetória, ha
 ## 🚀 Acesse o projeto
 
 🔗 **Portfólio Online:**  
-https://barbbosa.github.io/portfolio
+[https://barbbosa.github.io/portfolio](https://barbbosa.github.io/Barbbosa/)
 
 ## 🛠️ Tecnologias utilizadas
 
